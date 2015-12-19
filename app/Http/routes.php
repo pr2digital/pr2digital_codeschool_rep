@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index');
+
+//Rotas referente as paginas admin
+Route::get('/admin/categories', 'AdminCategoriesController@index');
+Route::get('/admin/products', 'AdminProductsController@index');
