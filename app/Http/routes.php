@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/categories', 'CategoriesController@index');
+
 Route::get('/', 'WelcomeController@index');
 
 //Rotas referente as paginas admin
